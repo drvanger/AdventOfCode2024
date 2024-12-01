@@ -13,5 +13,5 @@ class Template (fileName : String) {
 }
 
 fun main() {
-    val d = Template("/home/duri/intellij-projects/AdventOfCode2023/data/day1_test.txt")
+    val d = Template("data/day1_test.txt")
 }
