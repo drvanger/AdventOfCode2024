@@ -8,7 +8,6 @@ class Day2 (fileName : String) {
     private val data = File(fileName).readLines().map { it.split(" ").map { it.toInt() } }
 
     private fun isSafe  (report : List<Int>) : Boolean {
-        //println(report)
 
         var sign = 0
 
@@ -45,8 +44,6 @@ class Day2 (fileName : String) {
 
     fun partTwo() {
         println(data.map { isSafe2(it) }.filter { it }.size)
-
-        //println(data.map { isSafe2(it) })
     }
 }
 
