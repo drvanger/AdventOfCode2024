@@ -1,4 +1,4 @@
-package template
+package day2
 
 import java.io.File
 import kotlin.math.abs
