@@ -57,5 +57,5 @@ class Day7 (fileName : String) {
 fun main() {
     val d = Day7("data/day7.txt")
 
-    d.partTwo()
+    d.partOne()
 }
