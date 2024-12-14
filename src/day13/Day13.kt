@@ -63,6 +63,8 @@ class Day13 (fileName : String) {
         var x : Long = (m.btnB.second * m.prize.first - m.btnB.first * m.prize.second) / (m.btnB.second * m.btnA.first - m.btnB.first * m.btnA.second)
         var y = (m.prize.second - m.btnA.second * x) / m.btnB.second
 
+        println(x.toString() + ", " + y)
+
         if (x * m.btnA.first + y * m.btnB.first != m.prize.first || x * m.btnA.second + y * m.btnB.second != m.prize.second) {
             x = 0.toLong()
             y = 0.toLong()
@@ -85,7 +87,7 @@ class Day13 (fileName : String) {
         var result = 0.toLong()
 
         for (m in machines) {
-            var m2 = Machine(m.btnA, m.btnB, Pair(m.prize.first + 10000000000000, m.prize.second + 10000000000000))
+            val m2 = Machine(m.btnA, m.btnB, Pair(m.prize.first + 10000000000000, m.prize.second + 10000000000000))
 
             result += calcFormula(m2)
         }
@@ -95,7 +97,7 @@ class Day13 (fileName : String) {
 }
 
 fun main() {
-    val d = Day13("data/day13.txt")
+    val d = Day13("data/day13_levi.txt")
 
     d.partTwo()
 }
